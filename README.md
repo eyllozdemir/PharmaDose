@@ -68,7 +68,9 @@ These times are mathematical examples only and must not be used as medical instr
 
 ## Screenshots
 
-Screenshots of the program's main menu, example schedule, and saved TXT output will be added to the repository.
+### Main Menu
+
+[PharmaDose Main Menu](main_menu.png)
 
 ## Project Purpose
 
