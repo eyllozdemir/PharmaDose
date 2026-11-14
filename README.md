@@ -1,82 +1,139 @@
-# PharmaDose – Medication Schedule Planner
+# PharmaDose – İlaç Kullanım Takvimi Planlayıcısı
 
-## Project Description
+## 1. Proje Hakkında
 
-PharmaDose is a Python-based command-line application developed as an educational project for the GEP1316 Coding Literacy course.
+**PharmaDose**, GEP1316 Kodlama Okuryazarlığı dersi kapsamında Python programlama dili kullanılarak geliştirilmiş, komut satırı üzerinden çalışan bir ilaç kullanım takvimi planlama uygulamasıdır.
 
-The application helps users organize medication information and generate example daily schedules.
+Projenin temel amacı, kullanıcıların ilaç bilgilerini düzenli bir şekilde kaydetmelerini, günlük kullanım sıklıklarına göre matematiksel örnek saatler oluşturmalarını ve bu bilgileri bir metin dosyasına aktarmalarını sağlamaktır.
 
-**Disclaimer:** This application is for educational purposes only. It does not provide medical advice or determine appropriate medication dosing schedules.
+Uygulama, eczacılık alanıyla ilişkili basit bir problemin temel programlama yöntemleri kullanılarak nasıl çözülebileceğini göstermeyi amaçlamaktadır.
 
-## Features
+**Önemli Uyarı:** PharmaDose yalnızca eğitim amacıyla geliştirilmiştir. Tıbbi tavsiye sunmaz, hastaya özel doz belirlemez ve gerçek ilaç kullanım saatleri için kullanılmamalıdır. İlaç kullanımı konusunda hekim ve eczacı tarafından verilen talimatlar esas alınmalıdır.
 
-- Add medication names and dose information.
-- Enter daily frequency and treatment duration.
-- Display a list of added medications.
-- Generate example daily schedules using equal time intervals.
-- Validate user inputs and handle invalid entries.
-- Save medication information and example schedules to a TXT file.
+## 2. Uygulamanın Özellikleri
 
-## Technologies Used
+- İlaç adı ve doz bilgisinin kullanıcı tarafından girilmesi.
+- Günlük kullanım sıklığı ve tedavi süresinin belirlenmesi.
+- Eklenen ilaçların liste halinde görüntülenmesi.
+- Günlük kullanım sıklığına göre eşit zaman aralıklarıyla örnek saatlerin hesaplanması.
+- Hatalı kullanıcı girişlerinin kontrol edilmesi.
+- İlaç bilgilerinin ve oluşturulan örnek takvimin TXT formatında kaydedilmesi.
+- Kullanıcı dostu, menü tabanlı bir komut satırı arayüzü sunulması.
 
-- Python 3
-- Visual Studio Code
-- GitHub
+## 3. Kullanılan Teknolojiler
 
-## How to Run
+- **Python 3:** Uygulamanın geliştirilmesinde kullanılan programlama dili.
+- **Visual Studio Code:** Kod yazma, düzenleme ve test işlemleri için kullanılan geliştirme ortamı.
+- **GitHub:** Proje dosyalarının saklanması, düzenlenmesi ve paylaşılması için kullanılan platform.
 
-1. Install Python 3.
-2. Download the `main.py` file from this repository.
-3. Open a terminal in the folder containing the file.
-4. Run the following command:
+## 4. Kurulum ve Çalıştırma
 
-   `python3 main.py`
+Uygulamayı çalıştırmak için aşağıdaki adımlar izlenmelidir:
 
-5. Follow the instructions in the main menu.
+1. Bilgisayara Python 3 yüklenir.
+2. GitHub deposundaki `main.py` dosyası indirilir.
+3. Terminal açılarak dosyanın bulunduğu klasöre geçilir.
+4. Aşağıdaki komut çalıştırılır:
 
-## Main Menu
+```bash
+python3 main.py
+```
 
-1. Add medication
-2. Show medications
-3. Show example schedule
-4. Save schedule to TXT
-5. Exit
+5. Ekranda görüntülenen ana menü üzerinden istenilen işlem seçilir.
 
-## Example Output
+Uygulama için ek bir Python kütüphanesinin yüklenmesi gerekmemektedir.
 
-Medication: Paracetamol
+## 5. Uygulamanın Ana Menüsü
 
-Dose: 1 tablet
+Program çalıştırıldığında kullanıcıya beş farklı işlem seçeneği sunulur:
 
-Frequency: 3 times per day
+| Seçenek | İşlev |
+|---|---|
+| 1 | Yeni ilaç bilgisi ekleme |
+| 2 | Kaydedilen ilaçları görüntüleme |
+| 3 | Örnek ilaç kullanım takvimini görüntüleme |
+| 4 | İlaç bilgilerini ve takvimi TXT dosyasına kaydetme |
+| 5 | Programdan çıkış yapma |
 
-Duration: 5 days
+## 6. Örnek Kullanım
 
-Example times: 08:00, 16:00, 00:00
+Kullanıcı tarafından aşağıdaki örnek bilgiler girilebilir:
 
-These times are mathematical examples only and must not be used as medical instructions.
+| Bilgi | Örnek Değer |
+|---|---|
+| İlaç adı | Paracetamol |
+| Doz bilgisi | 1 tablet |
+| Günlük kullanım sıklığı | 3 |
+| Tedavi süresi | 5 gün |
 
-## Python Concepts Used
+Bu bilgiler doğrultusunda program, başlangıç saatini 08.00 kabul ederek eşit zaman aralıklarına dayalı aşağıdaki örnek saatleri oluşturur:
 
-- Functions
-- Lists and dictionaries
-- Conditional statements (`if`, `elif`, `else`)
-- Loops (`while`, `for`)
-- Input validation
-- Exception handling (`try`, `except`)
-- File operations
+**08:00 – 16:00 – 00:00**
 
-## Screenshots
+Bu saatler yalnızca matematiksel hesaplamayı göstermek amacıyla oluşturulmuştur. Gerçek bir ilaç kullanım önerisi değildir.
 
-### Main Menu
+## 7. Kullanılan Python Programlama Kavramları
 
-![PharmaDose Main Menu](main_menu.png)
+Projenin geliştirilmesi sırasında aşağıdaki temel programlama kavramlarından yararlanılmıştır:
 
+- **Fonksiyonlar:** Programın farklı görevlerinin ayrı bölümler halinde düzenlenmesi.
+- **Listeler ve sözlükler:** İlaç bilgilerinin saklanması ve yönetilmesi.
+- **Koşullu ifadeler (`if`, `elif`, `else`):** Menü seçimlerinin ve kullanıcı girişlerinin değerlendirilmesi.
+- **Döngüler (`while`, `for`):** Programın çalışmaya devam etmesi ve kayıtların işlenmesi.
+- **Girdi doğrulama:** Kullanıcı tarafından girilen bilgilerin kontrol edilmesi.
+- **Hata yönetimi (`try`, `except`):** Uygun olmayan veri girişlerinden kaynaklanabilecek hataların ele alınması.
+- **Dosya işlemleri:** Bilgilerin `.txt` uzantılı bir dosyaya kaydedilmesi.
 
-### Example Medication Schedule
+## 8. Ekran Görüntüleri
 
-![PharmaDose Schedule](schedule.png)
+### 8.1. Uygulamanın Ana Menüsü
 
-## Project Purpose
+![PharmaDose Ana Menü](main_menu.png)
 
-The project demonstrates how basic programming concepts can be used to automate a simple task related to pharmacy education.
+### 8.2. Örnek İlaç Kullanım Takvimi
+
+![PharmaDose Örnek Takvim](schedule.png)
+
+### 8.3. TXT Dosyasına Kaydedilen Çıktı
+
+![PharmaDose TXT Çıktısı](txt_output.png)
+
+## 9. Test Senaryoları
+
+Uygulamanın temel işlevlerini ve hata kontrol mekanizmalarını değerlendirmek amacıyla aşağıdaki senaryolar test edilmiştir:
+
+| Test | Senaryo | Beklenen Sonuç |
+|---|---|---|
+| 1 | Geçerli ilaç bilgilerinin girilmesi | İlaç kaydının başarıyla oluşturulması |
+| 2 | Kaydedilen ilaçların listelenmesi | İlaç bilgilerinin ekranda görüntülenmesi |
+| 3 | Günlük kullanım sıklığına harf (`abc`) girilmesi | Hatalı girişin tespit edilmesi |
+| 4 | Günlük kullanım sıklığına `0` girilmesi | Geçersiz değerin reddedilmesi |
+| 5 | Günlük kullanım sıklığının `3` olarak belirlenmesi | Örnek saatlerin hesaplanması |
+| 6 | TXT dosyasına kayıt seçeneğinin kullanılması | Metin dosyasının oluşturulması |
+| 7 | Menüde bulunmayan `9` seçeneğinin girilmesi | Geçersiz menü seçiminin bildirilmesi |
+
+## 10. Yapay Zekâ Kullanımı
+
+Projenin geliştirilme sürecinde ChatGPT'den programlama kavramlarını öğrenmek, örnek kod yapılarını değerlendirmek, hata mesajlarını anlamak ve test senaryolarını planlamak amacıyla destek alınmıştır.
+
+Yapay zekâ tarafından sunulan öneriler geliştirme sürecinde incelenmiş, gerekli düzenlemeler yapılmış ve uygulama test edilmiştir.
+
+Yapay zekâ ile gerçekleştirilen etkileşimlerin ve değerlendirmelerin ayrıntıları `PROMPTLAR.md` dosyasında açıklanmıştır.
+
+## 11. Projenin Amacı ve Kazanımları
+
+PharmaDose projesi, eczacılık eğitimiyle ilişkili bir örnek üzerinden temel Python programlama becerilerinin uygulanmasını amaçlamaktadır.
+
+Proje sayesinde kullanıcıdan veri alma, verileri saklama, koşullu ifadeler ve döngüler kullanma, fonksiyon oluşturma, hata kontrolü gerçekleştirme ve dosyaya veri kaydetme konularında uygulamalı deneyim kazanılmıştır.
+
+Ayrıca yazılım geliştirme sürecinde yapay zekâ araçlarından eleştirel ve sorumlu biçimde yararlanmanın önemi değerlendirilmiştir.
+
+---
+
+**Ders:** GEP1316 – Kodlama Okuryazarlığı
+
+**Proje:** PharmaDose – İlaç Kullanım Takvimi Planlayıcısı
+
+**Proje Türü:** Python Mini Uygulaması
+
+**Geliştirme Amacı:** Eğitim ve programlama becerilerinin geliştirilmesi
