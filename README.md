@@ -70,7 +70,12 @@ These times are mathematical examples only and must not be used as medical instr
 
 ### Main Menu
 
-[PharmaDose Main Menu](main_menu.png)
+![PharmaDose Main Menu](main_menu.png)
+
+
+### Example Medication Schedule
+
+![PharmaDose Schedule](schedule.png)
 
 ## Project Purpose
 
