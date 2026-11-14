@@ -131,14 +131,8 @@ def save_medications():
                 file.write(f"Time {i + 1}: {hour:02d}:{minute:02d}\n")
 
     print("\nSchedule saved to medication_schedule.txt!")
-
-
-
-# FUNCTION 5: Welcome message
-def welcome_message():
-    print("=" * 45)
-    print("       WELCOME TO PHARMADOSE")
   
+
 
 # FUNCTION 5: Welcome message
 def welcome_message():
